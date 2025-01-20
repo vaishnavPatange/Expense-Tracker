@@ -18,6 +18,8 @@ namespace Expense_Tracker
 
             var app = builder.Build();
 
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2XVhhQlJHfV5AQmBIYVp/TGpJfl96cVxMZVVBJAtUQF1hTH5SdEVjWH1ccnVVRGla");
+
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
@@ -32,10 +34,10 @@ namespace Expense_Tracker
             app.UseRouting();
 
             app.UseAuthorization();
-
+             
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Category}/{action=Index}/{id?}");
 
             app.Run();
         }
