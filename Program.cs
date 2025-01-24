@@ -37,7 +37,7 @@ namespace Expense_Tracker
              
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Transaction}/{action=Index}/{id?}");
+                pattern: "{controller=Dashboard}/{action=Index}/{id?}");
 
             app.Run();
         }
