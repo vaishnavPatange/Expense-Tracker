@@ -1,10 +1,10 @@
 html {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   background-color: #12161d;
   color: #fff;
   overflow: hidden;
@@ -38,7 +38,7 @@ body {
 .main-content{
     margin-left: 290px;
     overflow-y: auto;
-    height: 80vh;
+    height: 92vh;
 }
 
 
@@ -324,6 +324,7 @@ img.profile-pic {
 
 /*Widget*/
 .widget {
+    margin: 5px;
     border-radius: 1rem;
     background-color: #1a222b;
 }
